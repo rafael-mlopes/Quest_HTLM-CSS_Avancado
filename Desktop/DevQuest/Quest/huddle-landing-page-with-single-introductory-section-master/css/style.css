@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    max-height: 100vh;
+    width: 1440px;
+    font-family: 'Open Sans';
+    color: #fff;
+    font-weight: 400;
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho"
+                            "main main"
+                            "rodape rodape";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--cor-fundo, blueviolet);
+    background-image: url(../images/bg-desktop.svg);
+    
+}
+
+/* HEADER */
+.header{
+    grid-area: cabecalho;
+    margin: 20px;
+}
+/* MAIN */
+.main{
+    grid-area: main;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+.main .texto-info .titulo h2{
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.imagem-principal{
+    min-width: 709px;
+    min-height: 506px;
+}
+
+.texto-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 40px;
+}
+.main .texto-info p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.botao a{
+    color: var(--cor-fundo, blueviolet);
+    padding: 15px 100px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    background-color: #fff;
+    align-self: flex-start;
+    border-radius: 50px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+/* FOOTER */
+.rodape{
+    grid-area: rodape;
+    background-color: green;
+}
