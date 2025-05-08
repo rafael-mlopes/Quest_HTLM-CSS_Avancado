@@ -1,0 +1,44 @@
+@media(max-width: 775px){
+    body{
+        background: var(--cor-fundo) url(../images/bg-mobile.svg) no-repeat right top;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .main .texto-info .titulo h2{
+        font-size: 28px;
+    }
+
+    .main .texto-info p{
+        font-size: 18px;
+    }
+
+    .imagem-principal img{
+        min-width: 100%;
+        height: auto;
+    }
+
+    .texto-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botao{
+        display: flex;
+        align-self: center;
+    }
+    .rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons{
+        margin: 30px;
+    }
+}
